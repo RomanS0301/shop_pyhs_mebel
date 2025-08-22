@@ -1,6 +1,8 @@
 python -m venv env\myshop  создание виртуальной среды проекта
-.\env\myshop\Scripts\activate  активация виртуальной среды
+.\env\shopvenv\Scripts\activate  активация виртуальной среды
 
+pip freeze > requirements.txt
+pip install -r requirements.txt
 
 django-admin startproject myshop старт проекта
 django-admin startapp shop создание приложения
